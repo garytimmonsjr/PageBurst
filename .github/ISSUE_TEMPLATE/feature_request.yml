@@ -1,0 +1,16 @@
+name: 💡 Feature idea
+description: Suggest something PageBurst should do
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      placeholder: "A way to sort my library by date added…"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help you?
+      description: How do you read, and what's annoying right now?
