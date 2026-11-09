@@ -1,0 +1,39 @@
+name: 🐞 Bug report
+description: Something isn't working right
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve PageBurst! Tip: in the app, **Help & Support → Copy** grabs your device info.
+        Please don't attach or link copyrighted manga files. Describe the file instead (format, size, page count).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: "I linked a folder with 3 series, but only 2 showed up…"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Tap Add manga → Link a folder
+        2. Pick …
+        3. …
+  - type: dropdown
+    id: format
+    attributes:
+      label: File type involved
+      multiple: true
+      options: [Folder of images, CBZ / ZIP, CBR / RAR, PDF, EPUB, Not file-related]
+  - type: input
+    id: device
+    attributes:
+      label: Device info
+      description: App version, phone model, Android version
+      placeholder: "PageBurst 0.1.0 · Pixel 8 · Android 16"
+    validations:
+      required: true
